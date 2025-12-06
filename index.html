@@ -1,12 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Master Git version control with interactive tutorials, comprehensive guides, and hands-on learning. Learn Git commands, workflows, and best practices.">
+    <title>GitMaster - Learn Git Version Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>Git learning</h1>
-    <p>git is distributed open source</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span class="brand-text">GitMaster</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#tutorials" class="nav-link">Tutorials</a></li>
+                <li><a href="#commands" class="nav-link">Commands</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+            </ul>
+            <button class="btn-primary">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Master <span class="gradient-text">Git</span> Version Control
+                </h1>
+                <p class="hero-subtitle">
+                    Learn Git from basics to advanced with interactive tutorials, real-world examples, and hands-on
+                    practice. Your journey to becoming a Git expert starts here.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large">Start Learning</button>
+                    <button class="btn-secondary btn-large">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
+                        </svg>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Tutorials</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Commands</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Learners</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn red"></span>
+                            <span class="terminal-btn yellow"></span>
+                            <span class="terminal-btn green"></span>
+                        </div>
+                        <div class="terminal-title">bash</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">git init</span>
+                        </div>
+                        <div class="terminal-output">Initialized empty Git repository</div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">git add .</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">git commit -m "Initial commit"</span>
+                        </div>
+                        <div class="terminal-output">[main 1a2b3c4] Initial commit</div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Learn Git with Us?</h2>
+            <p class="section-subtitle">Everything you need to master version control</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Interactive Tutorials</h3>
+                    <p class="feature-description">Learn by doing with our hands-on interactive tutorials that simulate
+                        real Git workflows.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Step-by-Step Guides</h3>
+                    <p class="feature-description">Follow comprehensive guides that break down complex Git concepts into
+                        easy steps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Quick Reference</h3>
+                    <p class="feature-description">Access a complete command reference with examples and use cases at
+                        your fingertips.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon orange">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-World Scenarios</h3>
+                    <p class="feature-description">Practice with scenarios you'll encounter in actual development
+                        workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="tutorials">
+        <div class="container">
+            <h2 class="section-title">Popular Tutorials</h2>
+            <p class="section-subtitle">Start your Git journey with these essential tutorials</p>
+            <div class="tutorials-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-badge beginner">Beginner</div>
+                    <h3 class="tutorial-title">Getting Started with Git</h3>
+                    <p class="tutorial-description">Learn the fundamentals of Git, including initialization, staging,
+                        and committing changes.</p>
+                    <div class="tutorial-meta">
+                        <span class="tutorial-duration">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            30 min
+                        </span>
+                        <span class="tutorial-lessons">5 lessons</span>
+                    </div>
+                    <button class="btn-outline">Start Tutorial</button>
+                </div>
+                <div class="tutorial-card">
+                    <div class="tutorial-badge intermediate">Intermediate</div>
+                    <h3 class="tutorial-title">Branching & Merging</h3>
+                    <p class="tutorial-description">Master Git branches, merging strategies, and conflict resolution
+                        techniques.</p>
+                    <div class="tutorial-meta">
+                        <span class="tutorial-duration">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            45 min
+                        </span>
+                        <span class="tutorial-lessons">8 lessons</span>
+                    </div>
+                    <button class="btn-outline">Start Tutorial</button>
+                </div>
+                <div class="tutorial-card">
+                    <div class="tutorial-badge advanced">Advanced</div>
+                    <h3 class="tutorial-title">Advanced Git Workflows</h3>
+                    <p class="tutorial-description">Explore rebasing, cherry-picking, and advanced collaboration
+                        workflows.</p>
+                    <div class="tutorial-meta">
+                        <span class="tutorial-duration">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            60 min
+                        </span>
+                        <span class="tutorial-lessons">12 lessons</span>
+                    </div>
+                    <button class="btn-outline">Start Tutorial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2 class="section-title">Essential Git Commands</h2>
+            <p class="section-subtitle">Quick reference for the most commonly used commands</p>
+            <div class="commands-grid">
+                <div class="command-card">
+                    <div class="command-header">
+                        <code class="command-name">git init</code>
+                        <button class="copy-btn" data-command="git init">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path
+                                    d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="command-description">Initialize a new Git repository in the current directory</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-header">
+                        <code class="command-name">git clone &lt;url&gt;</code>
+                        <button class="copy-btn" data-command="git clone <url>">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path
+                                    d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="command-description">Clone a repository from a remote source to your local machine</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-header">
+                        <code class="command-name">git add .</code>
+                        <button class="copy-btn" data-command="git add .">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path
+                                    d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="command-description">Stage all changes in the current directory for the next commit</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-header">
+                        <code class="command-name">git commit -m "message"</code>
+                        <button class="copy-btn" data-command='git commit -m "message"'>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path
+                                    d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="command-description">Commit staged changes with a descriptive message</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-header">
+                        <code class="command-name">git push</code>
+                        <button class="copy-btn" data-command="git push">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path
+                                    d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="command-description">Upload local commits to the remote repository</p>
+                </div>
+                <div class="command-card">
+                    <div class="command-header">
+                        <code class="command-name">git pull</code>
+                        <button class="copy-btn" data-command="git pull">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path
+                                    d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="command-description">Fetch and merge changes from the remote repository</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Learning Resources</h2>
+            <p class="section-subtitle">Curated resources to deepen your Git knowledge</p>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3 class="resource-title">Documentation</h3>
+                    <p class="resource-description">Comprehensive Git documentation and official guides</p>
+                    <a href="#" class="resource-link">Explore Docs →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🎥</div>
+                    <h3 class="resource-title">Video Tutorials</h3>
+                    <p class="resource-description">Watch step-by-step video guides and walkthroughs</p>
+                    <a href="#" class="resource-link">Watch Videos →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">💡</div>
+                    <h3 class="resource-title">Best Practices</h3>
+                    <p class="resource-description">Learn industry-standard Git workflows and conventions</p>
+                    <a href="#" class="resource-link">Read More →</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🎮</div>
+                    <h3 class="resource-title">Interactive Playground</h3>
+                    <p class="resource-description">Practice Git commands in a safe, interactive environment</p>
+                    <a href="#" class="resource-link">Start Practicing →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Master Git?</h2>
+                <p class="cta-subtitle">Join thousands of developers who have leveled up their version control skills
+                </p>
+                <button class="btn-primary btn-large">Start Learning Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span class="brand-text">GitMaster</span>
+                </div>
+                <p class="footer-tagline">Master Git, one commit at a time.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                </div>
+                <p class="footer-copyright">© 2025 GitMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
