@@ -4,7 +4,7 @@
 
 **Git** is an open-source distributed version control system that helps developers track changes in their code over time. Unlike centralized version control systems, Git gives every user a complete copy of the project repository, including its full history. This allows developers to work independently, commit changes locally, and later synchronize their work with a central repository.
 
-## Key Features
+## Features
 
 - **Distributed Architecture**: Every developer has a full copy of the repository
 - **Branching & Merging**: Create isolated branches for features and merge them seamlessly
@@ -43,4 +43,5 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
-Now you're ready to start tracking your project with Git!
+
+**Note !! :** This project is fully created using ai for my learning purpose.
